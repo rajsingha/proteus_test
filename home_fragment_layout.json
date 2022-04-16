@@ -1,22 +1,20 @@
 {
-  "data": {
-    "type": "LinearLayout",
-    "orientation": "vertical",
-    "padding": "16dp",
-    "children": [
-      {
-        "layout_width": "200dp",
-        "gravity": "center",
-        "type": "TextView",
-        "text": "@{user.profile.name}"
-      },
-      {
-        "type": "HorizontalProgressBar",
-        "layout_width": "200dp",
-        "layout_marginTop": "8dp",
-        "max": 6000,
-        "progress": "@{user.profile.experience}"
-      }
-    ]
-  }
+  "type": "LinearLayout",
+  "orientation": "vertical",
+  "padding": "16dp",
+  "children": [
+    {
+      "layout_width": "200dp",
+      "gravity": "center",
+      "type": "TextView",
+      "text": "@{user.profile.name}"
+    },
+    {
+      "type": "HorizontalProgressBar",
+      "layout_width": "200dp",
+      "layout_marginTop": "8dp",
+      "max": 6000,
+      "progress": "@{user.profile.experience}"
+    }
+  ]
 }

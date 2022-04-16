@@ -1,4 +1,5 @@
-{
+{data:{
+ {
   "type": "LinearLayout",
   "orientation": "vertical",
   "padding": "16dp",
@@ -14,4 +15,6 @@
     "max": 6000,
     "progress": "500"
   }]
+} 
+}
 }

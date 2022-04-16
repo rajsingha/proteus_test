@@ -1,0 +1,48 @@
+{
+  "type": "androidx.constraintlayout.widget.ConstraintLayout",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "children": [
+    {
+      "type": "include",
+      "id": "icd_toolbar",
+      "layout": "@layout/layout_toolbar_home_top",
+      "layout_width": "match_parent",
+      "layout_height": "@dimen/mp_60dp",
+      "layout_margin": "@dimen/mp_8dp",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintTop_toTopOf": "parent"
+    },
+    {
+      "type": "ScrollView",
+      "id": "sv",
+      "layout_width": "match_parent",
+      "layout_height": "@dimen/mp_0dp",
+      "layout_constraintBottom_toBottomOf": "parent",
+      "layout_constraintTop_toBottomOf": "icd_toolbar",
+      "children": [
+        {
+          "type": "androidx.appcompat.widget.LinearLayoutCompat",
+          "layout_width": "match_parent",
+          "layout_height": "wrap_content",
+          "layout_margin": "@dimen/mp_8dp",
+          "orientation": "vertical",
+          "children": [
+            {
+              "type": "androidx.viewpager2.widget.ViewPager2",
+              "background": "@color/materialPink",
+              "id": "vp_banner",
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation": "horizontal",
+              "layout_constraintEnd_toEndOf": "parent",
+              "layout_constraintStart_toStartOf": "parent",
+              "layout_constraintTop_toBottomOf": "icd_toolbar"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

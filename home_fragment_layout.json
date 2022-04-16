@@ -7,14 +7,15 @@
       "layout_width": "200dp",
       "gravity": "center",
       "type": "TextView",
-      "text": "@{user.profile.name}"
+      "text": "Hello World",
+      "textColor": "@color/materialWhite"
     },
     {
       "type": "HorizontalProgressBar",
       "layout_width": "200dp",
       "layout_marginTop": "8dp",
       "max": 6000,
-      "progress": "@{user.profile.experience}"
+      "progress": "500"
     }
   ]
 }
